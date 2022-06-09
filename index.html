@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mulan | Netflix Official Site</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.1.18/jquery.backstretch.min.js"
+        integrity="sha512-bXc1hnpHIf7iKIkKlTX4x0A0zwTiD/FjGTy7rxUERPZIkHgznXrN/2qipZuKp/M3MIcVIdjF4siFugoIc2fL0A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="./icon/nficon.png"/>
+    <link rel="stylesheet" href="./style/reset.css"/>
+    <link rel="stylesheet" href="./style/style.css"/>
+
+</head>
+<body>
+    <div class="header">
+        <div class="overlay-header">
+            <div class="header-left">
+                <div class="btn-menu" onclick="toggleMenu();">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <!--"/": link to Home-->
+                <div class="svg-nfLogo svg-icon-n-logo">
+                    <a href="./index.html">
+                        <svg class="svg-icon" focusable="true"
+                            viewBox="225 0 552 1000">
+                            <defs>
+                                <radialGradient id="4a2f0372-6114-4ad0-a07e-3cd78d975759-a" r="75%"
+                                    gradientTransform="matrix(.38 0 .5785 1 .02 0)">
+                                    <stop offset="60%" stop-opacity=".3"></stop>
+                                    <stop offset="90%" stop-opacity=".05"></stop>
+                                    <stop offset="100%" stop-opacity="0"></stop>
+                                </radialGradient>
+                            </defs>
+                            <path d="M225 0v1000c60-8 138-14 198-17V0H225" fill="#b1060e"></path>
+                            <path d="M579 0v983c71 3 131 9 198 17V0H579" fill="#b1060e"></path>
+                            <path d="M225 0v200l198 600V557l151 426c76 3 136 9 203 17V800L579 200v240L423 0H225"
+                                fill="url(#4a2f0372-6114-4ad0-a07e-3cd78d975759-a)"></path>
+                            <path d="M225 0l349 983c76 3 136 9 203 17L423 0H225" fill="#e50914"></path>
+                        </svg>
+                    </a>
+                </div>
+                <div class="svg-nfLogo svg-icon-netflix-logo">
+                    <a href="./index.html">
+                        <svg viewBox="0 0 111 30" class="svg-icon" focusable="true">
+                            <g id="netflix-logo">
+                                <path
+                                    d="M105.06233,14.2806261 L110.999156,30 C109.249227,29.7497422 107.500234,29.4366857 105.718437,29.1554972 L102.374168,20.4686475 L98.9371075,28.4375293 C97.2499766,28.1563408 95.5928391,28.061674 93.9057081,27.8432843 L99.9372012,14.0931671 L94.4680851,-5.68434189e-14 L99.5313525,-5.68434189e-14 L102.593495,7.87421502 L105.874965,-5.68434189e-14 L110.999156,-5.68434189e-14 L105.06233,14.2806261 Z M90.4686475,-5.68434189e-14 L85.8749649,-5.68434189e-14 L85.8749649,27.2499766 C87.3746368,27.3437061 88.9371075,27.4055675 90.4686475,27.5930265 L90.4686475,-5.68434189e-14 Z M81.9055207,26.93692 C77.7186241,26.6557316 73.5307901,26.4064111 69.250164,26.3117443 L69.250164,-5.68434189e-14 L73.9366389,-5.68434189e-14 L73.9366389,21.8745899 C76.6248008,21.9373887 79.3120255,22.1557784 81.9055207,22.2804387 L81.9055207,26.93692 Z M64.2496954,10.6561065 L64.2496954,15.3435186 L57.8442216,15.3435186 L57.8442216,25.9996251 L53.2186709,25.9996251 L53.2186709,-5.68434189e-14 L66.3436123,-5.68434189e-14 L66.3436123,4.68741213 L57.8442216,4.68741213 L57.8442216,10.6561065 L64.2496954,10.6561065 Z M45.3435186,4.68741213 L45.3435186,26.2498828 C43.7810479,26.2498828 42.1876465,26.2498828 40.6561065,26.3117443 L40.6561065,4.68741213 L35.8121661,4.68741213 L35.8121661,-5.68434189e-14 L50.2183897,-5.68434189e-14 L50.2183897,4.68741213 L45.3435186,4.68741213 Z M30.749836,15.5928391 C28.687787,15.5928391 26.2498828,15.5928391 24.4999531,15.6875059 L24.4999531,22.6562939 C27.2499766,22.4678976 30,22.2495079 32.7809542,22.1557784 L32.7809542,26.6557316 L19.812541,27.6876933 L19.812541,-5.68434189e-14 L32.7809542,-5.68434189e-14 L32.7809542,4.68741213 L24.4999531,4.68741213 L24.4999531,10.9991564 C26.3126816,10.9991564 29.0936358,10.9054269 30.749836,10.9054269 L30.749836,15.5928391 Z M4.78114163,12.9684132 L4.78114163,29.3429562 C3.09401069,29.5313525 1.59340144,29.7497422 0,30 L0,-5.68434189e-14 L4.4690224,-5.68434189e-14 L10.562377,17.0315868 L10.562377,-5.68434189e-14 L15.2497891,-5.68434189e-14 L15.2497891,28.061674 C13.5935889,28.3437998 11.906458,28.4375293 10.1246602,28.6868498 L4.78114163,12.9684132 Z"
+                                    id="Fill-14">
+                                </path>
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+                <ul class="navigation">
+                    <li><a href="#">Home</a></li>
+                    <li class="active"><a href="#">Movies</a></li>
+                    <li><a href="#">Series</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">My List</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="overlay-header">
+            <div class="header-right">
+                <div class="search-box">
+                    <input type="text" placeholder="Search..."/>
+                    <button><i class="fa fa-search"></i></button>
+                </div>
+                <div class="notification"><i class="fa fa-bell"></i></div>
+                <div class="btn-login"><a href="#">Login</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="container-info">
+            <img src="./ntflx.info/name.png" alt="name of movies" class="container-info__image-title"/>
+            <div class="container-info__details">
+                <h2>Mulan</h2>
+                <h4>
+                    <span>2020</span>
+                    <span class="info-spacer">|</span>
+                    <span><i>12+</i></span>
+                    <span class="info-spacer">|</span>
+                    <span>1h 55m</span>
+                    <span class="info-spacer">|</span>
+                    <span>Action</span>
+                </h4>
+                <p>
+                    A girl disguises as a male warrior and joins the imperial army in order to prevent her sick father from being forced
+                    to enlist as he has no male heir.
+                </p>
+            </div>
+            <div class="container-info__btn-action">
+                <a href='#' onclick="playVideo();"><i class="fa fa-play"></i> Play</a>
+                <!-- javascript:void[0]:
+                a "javascript": URL will redirect the browser to a plain
+                text version of the result of evaluating that JavaScript.
+                But if the result is "undefined", then the browser stays on the same page. 
+                "void(0)" is just a short and simple script that evaluates to "undefined".
+                -->
+                <a href='javascript:void[0]' onclick="toggleIntro();">More Information</a>
+            </div>
+        </div>
+        <div class="container-image">
+            <div class="background image-desktop"></div>
+            <div class="background image-mobile">
+                <img src="./ntflx.info/bg-mobile/bg-mobile.jpg" alt="image-mobile">
+            </div>
+        </div>
+    </div>
+
+    <div class="intro">
+        <div class="trailer">
+            <iframe src="https://www.youtube.com/embed/KK8FHdFluOQ?enablejsapi=1" title="YouTube video player"
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+            <button class="close" onclick="toggleIntro();"></button>
+        </div>
+    </div>
+
+    <div class="menu-container">
+        <div id="scrim" onclick="toggleMenu();"></div>
+        <div class="menu">
+            <div class="menu-header">
+                <span class="btn-close" onclick="toggleMenu();">&#xf057;</span>
+                <div class="svg-nfLogo">
+                    <a href="./index.html">
+                        <svg viewBox="0 0 111 30" class="svg-icon svg-icon-netflix-logo" focusable="true">
+                            <g id="netflix-logo">
+                                <path
+                                    d="M105.06233,14.2806261 L110.999156,30 C109.249227,29.7497422 107.500234,29.4366857 105.718437,29.1554972 L102.374168,20.4686475 L98.9371075,28.4375293 C97.2499766,28.1563408 95.5928391,28.061674 93.9057081,27.8432843 L99.9372012,14.0931671 L94.4680851,-5.68434189e-14 L99.5313525,-5.68434189e-14 L102.593495,7.87421502 L105.874965,-5.68434189e-14 L110.999156,-5.68434189e-14 L105.06233,14.2806261 Z M90.4686475,-5.68434189e-14 L85.8749649,-5.68434189e-14 L85.8749649,27.2499766 C87.3746368,27.3437061 88.9371075,27.4055675 90.4686475,27.5930265 L90.4686475,-5.68434189e-14 Z M81.9055207,26.93692 C77.7186241,26.6557316 73.5307901,26.4064111 69.250164,26.3117443 L69.250164,-5.68434189e-14 L73.9366389,-5.68434189e-14 L73.9366389,21.8745899 C76.6248008,21.9373887 79.3120255,22.1557784 81.9055207,22.2804387 L81.9055207,26.93692 Z M64.2496954,10.6561065 L64.2496954,15.3435186 L57.8442216,15.3435186 L57.8442216,25.9996251 L53.2186709,25.9996251 L53.2186709,-5.68434189e-14 L66.3436123,-5.68434189e-14 L66.3436123,4.68741213 L57.8442216,4.68741213 L57.8442216,10.6561065 L64.2496954,10.6561065 Z M45.3435186,4.68741213 L45.3435186,26.2498828 C43.7810479,26.2498828 42.1876465,26.2498828 40.6561065,26.3117443 L40.6561065,4.68741213 L35.8121661,4.68741213 L35.8121661,-5.68434189e-14 L50.2183897,-5.68434189e-14 L50.2183897,4.68741213 L45.3435186,4.68741213 Z M30.749836,15.5928391 C28.687787,15.5928391 26.2498828,15.5928391 24.4999531,15.6875059 L24.4999531,22.6562939 C27.2499766,22.4678976 30,22.2495079 32.7809542,22.1557784 L32.7809542,26.6557316 L19.812541,27.6876933 L19.812541,-5.68434189e-14 L32.7809542,-5.68434189e-14 L32.7809542,4.68741213 L24.4999531,4.68741213 L24.4999531,10.9991564 C26.3126816,10.9991564 29.0936358,10.9054269 30.749836,10.9054269 L30.749836,15.5928391 Z M4.78114163,12.9684132 L4.78114163,29.3429562 C3.09401069,29.5313525 1.59340144,29.7497422 0,30 L0,-5.68434189e-14 L4.4690224,-5.68434189e-14 L10.562377,17.0315868 L10.562377,-5.68434189e-14 L15.2497891,-5.68434189e-14 L15.2497891,28.061674 C13.5935889,28.3437998 11.906458,28.4375293 10.1246602,28.6868498 L4.78114163,12.9684132 Z"
+                                    id="Fill-14">
+                                </path>
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="menu-navigation">
+                <ul>
+                    <li><b></b><b></b><a href="#"><i class="fas fa-home"></i>Home</a></li>
+                    <li class="active"><b></b><b></b><a href="#"><i class="fas fa-film"></i>Movies</a></li>
+                    <li><b></b><b></b><a href="#"><i class="fas fa-tv"></i>Series</a></li>
+                    <li><b></b><b></b><a href="#"><i class="fab fa-trello"></i>News</a></li>
+                    <li><b></b><b></b><a href="#"><i class="far fa-list-alt"></i>My List</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- #region -->
+    <!--change nav-->
+    <script>
+        const nav = document.querySelectorAll(".navigation li");
+        const navMenu = document.querySelectorAll(".menu-navigation li");
+        var className = 'active';
+
+        function removeAllClass(elements){for(element of elements){element.classList.remove(className)}}
+        function addClickEvents(elements, index){
+                elements[index].onclick = function () {
+                removeAllClass(nav);
+                removeAllClass(navMenu);
+                nav[index].className = 'active';
+                navMenu[index].className = 'active';
+            }
+        }
+
+        for(let i = 0; i < nav.length; i++){
+            addClickEvents(nav, i);
+            addClickEvents(navMenu, i);
+        }
+    </script>
+    <!--Automaticially change image-->
+    <script>
+        function changeBackground(auto = true){
+            // Generate a sequence of numbers
+            // Since the array is initialized with `undefined` on each position,
+            // the value of `v` below will be `undefined`
+            const index = Array.from({ length: 4 }, (v, i) => i + 1);
+            // create list link of images
+            const images = index.map(index => `./ntflx.info/bg-desktop/bg${index}.jpg`);
+
+            $('.background').backstretch(images, {
+                fade: 750,
+                duration: 15000,
+                preload: 1, //Use the lazy-loading functionality
+                start: 2 //Optional - now starts with "dome.jpg"
+            });
+
+            if(!auto){
+                $('.background').backstretch("pause");
+            }
+        }
+
+        // A $( document ).ready() block.
+        // Shorthand for $( document ).ready()
+        $(function(){
+            changeBackground(true);
+        });
+    </script>
+    <!--PLay video-->
+    <script>
+        function playVideo(){
+            window.location.replace("./Film-player/index.html");
+        }
+    </script>
+    <!--toggle Intro-->
+    <script>
+        function toggleIntro(){
+            var intro = document.querySelector(".intro");
+            if(intro.classList.contains('active')){
+                const iframe = intro.getElementsByTagName("iframe")[0].contentWindow;
+                // added "?enablejsapi=1" to YouTube's URL, to enable the feature (controls)
+                // func: playVideo, pauseVideo or stopVideo
+                iframe.postMessage('{"event":"command","func":"stopVideo","args":""}', '*');
+            }
+            intro.classList.toggle('active');
+        }
+    </script>
+    <!--toggle menu-->
+    <script>
+        function toggleMenu(){
+            document.querySelector(".menu-container").classList.toggle('active');
+        }
+    </script>
+    <!--Login-->
+    <script>
+        document.querySelector(".btn-login").addEventListener('click', function(){
+            window.location.replace("../Login/index.html");
+        });
+    </script>
+    <!-- #endregion -->
+</body>
+</html>
