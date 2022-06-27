@@ -79,166 +79,285 @@
             </div>
         </div>
     </div>
-    <div class="container">
-        <div class="container-info">
-            <img src="./ntflx.info/name.png" alt="name of movies" class="container-info__image-title"/>
-            <div class="container-info__details">
+
+    <div class="content">
+        <div class="container">
+            <div class="container-info">
+              <img
+                src="./ntflx.info/name.png"
+                alt="name of movies"
+                class="container-info__image-title"
+              />
+              <div class="container-info__details">
                 <h2>Mulan</h2>
                 <h4>
-                    <span>2020</span>
-                    <span class="info-spacer">|</span>
-                    <span><i>12+</i></span>
-                    <span class="info-spacer">|</span>
-                    <span>1h 55m</span>
-                    <span class="info-spacer">|</span>
-                    <span>Action</span>
+                  <span>2020</span>
+                  <span class="info-spacer">|</span>
+                  <span><i>12+</i></span>
+                  <span class="info-spacer">|</span>
+                  <span>1h 55m</span>
+                  <span class="info-spacer">|</span>
+                  <span>Action</span>
                 </h4>
                 <p>
-                    A girl disguises as a male warrior and joins the imperial army in order to prevent her sick father from being forced
-                    to enlist as he has no male heir.
+                  A girl disguises as a male warrior and joins the imperial army
+                  in order to prevent her sick father from being forced to
+                  enlist as he has no male heir.
                 </p>
-            </div>
-            <div class="container-info__btn-action">
-                <a href='#' onclick="playVideo();"><i class="fa fa-play"></i> Play</a>
+              </div>
+              <div class="container-info__btn-action">
+                <a href="./Film-player/index.html" class="play-video"
+                  ><i class="fa fa-play"></i> Play</a
+                >
                 <!-- javascript:void[0]:
                 a "javascript": URL will redirect the browser to a plain
                 text version of the result of evaluating that JavaScript.
-                But if the result is "undefined", then the browser stays on the same page. 
+                But if the result is "undefined", then the browser stays on the same page.
                 "void(0)" is just a short and simple script that evaluates to "undefined".
                 -->
-                <a href='javascript:void[0]' onclick="toggleIntro();">More Information</a>
+                <a
+                  href="javascript:void[0]"
+                  onclick="javascript:$('.browser-container').animate({scrollTop: 850}, 1000)"
+                  >More Information</a
+                >
+              </div>
+            </div>
+            <div class="container-image">
+              <div class="background image-desktop"></div>
+              <div class="background image-mobile">
+                <img
+                  src="./ntflx.info/bg-mobile/bg-mobile.jpg"
+                  alt="image-mobile"
+                />
+              </div>
             </div>
         </div>
-        <div class="container-image">
-            <div class="background image-desktop"></div>
-            <div class="background image-mobile">
-                <img src="./ntflx.info/bg-mobile/bg-mobile.jpg" alt="image-mobile">
+
+        <div class="hook">
+            <div class="hook__hr"></div>
+            <div class="hook__text">
+              It is a live-action adaptation of Disney's 1998 film of the same
+              name, itself based on the Chinese folklore story Ballad of Mulan.
+            </div>
+            <div class="hook__hr"></div>
+        </div>
+
+        <div class="videos">
+            <div class="title videos__title">Videos<span>Mulan</span></div>
+            <div class="videos__content">
+              <div
+                onclick="openIntro('https\://www.youtube.com/embed/KK8FHdFluOQ?enablejsapi=1');"
+              >
+                <span
+                  style="background-image: url('./ntflx.info/trailer.jpg')"
+                ></span>
+                <span>Trailer: Mulan</span>
+              </div>
+              <div
+                onclick="openIntro('https\://www.youtube.com/embed/01ON04GCwKs');"
+              >
+                <span
+                  style="background-image: url('./ntflx.info/teaser.jpg')"
+                ></span>
+                <span>Teaser: Mulan</span>
+              </div>
             </div>
         </div>
-    </div>
 
-    <div class="intro">
-        <div class="trailer">
-            <iframe src="https://www.youtube.com/embed/KK8FHdFluOQ?enablejsapi=1" title="YouTube video player"
-                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen>
-            </iframe>
-            <button class="close" onclick="toggleIntro();"></button>
-        </div>
-    </div>
-
-    <div class="menu-container">
-        <div id="scrim" onclick="toggleMenu();"></div>
-        <div class="menu">
-            <div class="menu-header">
-                <span class="btn-close" onclick="toggleMenu();">&#xf057;</span>
-                <div class="svg-nfLogo">
-                    <a href="./index.html">
-                        <svg viewBox="0 0 111 30" class="svg-icon svg-icon-netflix-logo" focusable="true">
-                            <g id="netflix-logo">
-                                <path
-                                    d="M105.06233,14.2806261 L110.999156,30 C109.249227,29.7497422 107.500234,29.4366857 105.718437,29.1554972 L102.374168,20.4686475 L98.9371075,28.4375293 C97.2499766,28.1563408 95.5928391,28.061674 93.9057081,27.8432843 L99.9372012,14.0931671 L94.4680851,-5.68434189e-14 L99.5313525,-5.68434189e-14 L102.593495,7.87421502 L105.874965,-5.68434189e-14 L110.999156,-5.68434189e-14 L105.06233,14.2806261 Z M90.4686475,-5.68434189e-14 L85.8749649,-5.68434189e-14 L85.8749649,27.2499766 C87.3746368,27.3437061 88.9371075,27.4055675 90.4686475,27.5930265 L90.4686475,-5.68434189e-14 Z M81.9055207,26.93692 C77.7186241,26.6557316 73.5307901,26.4064111 69.250164,26.3117443 L69.250164,-5.68434189e-14 L73.9366389,-5.68434189e-14 L73.9366389,21.8745899 C76.6248008,21.9373887 79.3120255,22.1557784 81.9055207,22.2804387 L81.9055207,26.93692 Z M64.2496954,10.6561065 L64.2496954,15.3435186 L57.8442216,15.3435186 L57.8442216,25.9996251 L53.2186709,25.9996251 L53.2186709,-5.68434189e-14 L66.3436123,-5.68434189e-14 L66.3436123,4.68741213 L57.8442216,4.68741213 L57.8442216,10.6561065 L64.2496954,10.6561065 Z M45.3435186,4.68741213 L45.3435186,26.2498828 C43.7810479,26.2498828 42.1876465,26.2498828 40.6561065,26.3117443 L40.6561065,4.68741213 L35.8121661,4.68741213 L35.8121661,-5.68434189e-14 L50.2183897,-5.68434189e-14 L50.2183897,4.68741213 L45.3435186,4.68741213 Z M30.749836,15.5928391 C28.687787,15.5928391 26.2498828,15.5928391 24.4999531,15.6875059 L24.4999531,22.6562939 C27.2499766,22.4678976 30,22.2495079 32.7809542,22.1557784 L32.7809542,26.6557316 L19.812541,27.6876933 L19.812541,-5.68434189e-14 L32.7809542,-5.68434189e-14 L32.7809542,4.68741213 L24.4999531,4.68741213 L24.4999531,10.9991564 C26.3126816,10.9991564 29.0936358,10.9054269 30.749836,10.9054269 L30.749836,15.5928391 Z M4.78114163,12.9684132 L4.78114163,29.3429562 C3.09401069,29.5313525 1.59340144,29.7497422 0,30 L0,-5.68434189e-14 L4.4690224,-5.68434189e-14 L10.562377,17.0315868 L10.562377,-5.68434189e-14 L15.2497891,-5.68434189e-14 L15.2497891,28.061674 C13.5935889,28.3437998 11.906458,28.4375293 10.1246602,28.6868498 L4.78114163,12.9684132 Z"
-                                    id="Fill-14">
-                                </path>
-                            </g>
-                        </svg>
-                    </a>
+        <div class="more-details">
+            <div class="title more-details__title">More Details</div>
+            <div class="more-details__content">
+              <div class="more-details__content-cell">
+                <div class="more-details__content-label">Watch offline</div>
+                <div class="more-details__content-item-container">
+                  <span class="more-details__content-item"
+                    >Available to download</span
+                  >
                 </div>
+              </div>
+              <div class="more-details__content-cell">
+                <div class="more-details__content-label">Genres</div>
+                <div class="more-details__content-item-container">
+                  <span class="more-details__content-item"
+                    >Action, Drama, Children's film, Family, Fantasty</span
+                  >
+                </div>
+              </div>
+              <div class="more-details__content-cell">
+                <div class="more-details__content-label">Audio</div>
+                <div class="more-details__content-item-container">
+                  <span class="more-details__content-item"
+                    >English - Audio Description, English [Original], Japanese</span
+                  >
+                </div>
+              </div>
+              <div class="more-details__content-cell">
+                <div class="more-details__content-label">Subtitles</div>
+                <div class="more-details__content-item-container">
+                  <span class="more-details__content-item"
+                    >Eglish, Vietnamese, Simplified Chinese, Traditional Chinese</span
+                  >
+                </div>
+              </div>
             </div>
-            <div class="menu-navigation">
-                <ul>
-                    <li><b></b><b></b><a href="#"><i class="fas fa-home"></i>Home</a></li>
-                    <li class="active"><b></b><b></b><a href="#"><i class="fas fa-film"></i>Movies</a></li>
-                    <li><b></b><b></b><a href="#"><i class="fas fa-tv"></i>Series</a></li>
-                    <li><b></b><b></b><a href="#"><i class="fab fa-trello"></i>News</a></li>
-                    <li><b></b><b></b><a href="#"><i class="far fa-list-alt"></i>My List</a></li>
-                </ul>
+            <div class="more-details__content-cast">
+              <div class="more-details__content-label">Cast</div>
+              <div class="more-details__content-item-container">
+                <span class="more-details__content-item">Yifei Liu</span>
+                <span class="more-details__content-item">Donnie Yen</span>
+                <span class="more-details__content-item">Gong Li</span>
+                <span class="more-details__content-item">Jason Scott Lee</span>
+                <span class="more-details__content-item">Yoson An</span>
+                <span class="more-details__content-item">Jet Li</span>
+                <span class="more-details__content-item">Tzi Ma </span>
+                <span class="more-details__content-item">Rosalind Chao</span>
+                <span class="more-details__content-item">Xana Tang</span>
+                <span class="more-details__content-item">Ron Yuan</span>
+                <span class="more-details__content-item">Jimmy Wong</span>
+              </div>
+            </div>
+        </div>
+
+        <div class="more-like-this">
+            <div class="title more-like-this__title">More Like This</div>
+            <div class="more-like-this__content">
+              <a href="" class="more-like-this__content-link"
+                ><img
+                  src="./ntflx.info/img-link/AAAABbi480mzXNRfi4xElRkJYv7a1nK7AFuw9x0ZtmHdiuGqmtTWlbE8zGWtHW-uMs7hxwVJGOIAv79_s6Q5vi76HC-M-Gl3.jpg"
+                  alt=""
+                /> </a
+              ><a href="" class="more-like-this__content-link"
+                ><img
+                  src="./ntflx.info/img-link/AAAABct60YCwP0zRALTC9DYXZyOVj3YHmk6xN_VWYmM1jWf7SJVo03Y5lcStNc8pyGAcJ8mZ17Ej8BV4JQ37JQ-RDLi3h0Oj.jpg"
+                  alt="" /></a
+              ><a href="" class="more-like-this__content-link"
+                ><img
+                  src="./ntflx.info/img-link/AAAABebgXuDRx9ISEdlHLnaBN36pNShJKePYYwKw5-IJ8-pmmF1dEHVsPnTAaFZmplN_eGkdfMlU6gh8xc_mP2FhjFcW7YYF.jpg"
+                  alt="" /></a
+              ><a href="" class="more-like-this__content-link"
+                ><img
+                  src="./ntflx.info/img-link/AAAABfDSTW2Qi7M2bKDerK7Svf1TWoK1ynBk25I_srxVOhpu2Tzk739VVxb4s25F0XtWCDcht2D4Q57SpVy79vwvkjz8Tq2F.jpg"
+                  alt="" /></a
+              ><a href="" class="more-like-this__content-link"
+                ><img
+                  src="./ntflx.info/img-link/AAAABQBvAaj5jwWcsx5xI09UZx-agV18zdivvu9CMzDkd8JQ_P96h-FypqSnv1lrk44ar8F2nVIHRj_eXomTrR6ezEKO7ib4.jpg"
+                  alt="" /></a
+              ><a href="" class="more-like-this__content-link"
+                ><img
+                  src="./ntflx.info/img-link/AAAABQMzt0HqTTLw35MlA6PAhvMQqAKP7TnF8wKeyil5A9wcDzasEH_goA6NQJIsjF0v5n-YZbGpc5N-IT0CryD0G2jFjwYFAppw2sFXLaV40xHPt0FoHEYKQM5ml0jrBg.jpg"
+                  alt="" /></a
+              ><a href="" class="more-like-this__content-link"
+                ><img
+                  src="./ntflx.info/img-link/AAAABQq2vik8GlnpmAN1MkJsx-ZxRhadMz50rMdS5SrJUVyE4xRXiu5YClyUzkEZhnmtolPINEYafnG6y5M2GiMyjs1tRAIX.jpg"
+                  alt="" /></a
+              ><a href="" class="more-like-this__content-link"
+                ><img
+                  src="./ntflx.info/img-link/AAAABRDtNtorrA4vgqQJ-UgVdDaPIwzQoBvk0ErdGsRpkA7rmm8zh-nj1aJ_k8VzLpUo-dgWdgPEtDWeYAW4nkXgO5DhFrJJ.jpg"
+                  alt="" /></a
+              ><a href="" class="more-like-this__content-link"
+                ><img
+                  src="./ntflx.info/img-link/AAAABTogPrhM8pryNV-k2xvrE1Emycrxo2MIn1PbHcnZfZi4YNMTOpbwRbmf0-BkAg1ZoC0XGN5JMprcbmJFwtFO-CdMLU8H.jpg"
+                  alt="" /></a
+              ><a href="" class="more-like-this__content-link"
+                ><img
+                  src="./ntflx.info/img-link/AAAABVxiHYTHazFd7oTjk_OH-NNmw5jn1zfwQXmXon7zDuDi1VYG0w6RW82d8emqma7VGsV7pEFIyxKNhIdNhD9BF6IiBsFtWMACLOkIKXY-j2Wr8ROAHIJMobpFZKbLKQ.jpg"
+                  alt="" /></a
+              ><a href="" class="more-like-this__content-link"
+                ><img
+                  src="./ntflx.info/img-link/AAAABXT2l802DDSMARIdopvR0ewQX5XKGDK-En0JR8vijE_XwkMqFBxictBpoJLiw100zxSWP56sq7s81rXQNrBrUPY89pUtqKVAuvTsQYMqLu_brvslH7VkJ6LeHyFt3g.jpg"
+                  alt="" /></a
+              ><a href="" class="more-like-this__content-link"
+                ><img
+                  src="./ntflx.info/img-link/AAAABZVnAS488NC-2TH6eb2pctcnIIOL3TURpNOA0wAtPXaYA_nIbP1-agnHBteN_JPo8X53fSiz-MZCgAa53LjK7oYyNgY0oWtJ79zS7HYzPf_zZYAY9i-TQVDyY91a6A.jpg"
+                  alt=""
+              /></a>
+            </div>
+        </div>
+
+        <div class="coming-soon">
+            <div class="title coming-soon__title">Coming Soon</div>
+            <div class="coming-soon__content">
+              <a href="" class="coming-soon__content-link">
+                <div class="coming-soon__content-label">The Sea Beast</div>
+                <div class="coming-soon__content-synopsis">When a young girl stows away on the ship of a legendary sea monster hunter, they launch an epic journey into uncharted waters — and make history to boot.</div>
+              </a>
+              <a href="" class="coming-soon__content-link">
+                <div class="coming-soon__content-label">Girl in the Picture</div>
+                <div class="coming-soon__content-synopsis">In this documentary, a woman found dying by a road leaves behind a son, a man claiming to be her husband — and a mystery that unfolds like a nightmare.</div>
+              </a>
+              <a href="" class="coming-soon__content-link">
+                <div class="coming-soon__content-label">We Have a Ghost</div>
+                <div class="coming-soon__content-synopsis">Kevin's family goes viral after finding Ernest the ghost haunting their new home. But when Kevin helps Ernest dig into his past, they become CIA targets.</div>
+              </a>
+              <a href="" class="coming-soon__content-link">
+                <div class="coming-soon__content-label">Agent King</div>
+                <div class="coming-soon__content-synopsis">Kevin's family goes viral after finding Ernest the ghost haunting their new home. But when Kevin helps Ernest dig into his past, they become CIA targets.</div>
+              </a>
+              <a href="" class="coming-soon__content-link">
+                <div class="coming-soon__content-label">Kung Fu Panda: The Dragon Knight</div>
+                <div class="coming-soon__content-synopsis">Legendary warrior Po teams up with an elite English knight on a global quest to rescue magical weapons, restore his reputation — and save the world!</div>
+              </a>
+              <a href="" class="coming-soon__content-link">
+                <div class="coming-soon__content-label">How to Change Your Mind</div>
+                <div class="coming-soon__content-synopsis">Author Michael Pollan leads the way in this docuseries exploring the history and uses of psychedelics, including LSD, psilocybin, MDMA and mescaline.</div>
+              </a>
+              <a href="" class="coming-soon__content-link">
+                <div class="coming-soon__content-label">High in the Clouds</div>
+                <div class="coming-soon__content-synopsis">An imaginative young squirrel leads a musical revolution to save his parents from a tyrannical leader. Based on a children's book by Paul McCartney.</div>
+              </a>
+              <a href="" class="coming-soon__content-link">
+                <div class="coming-soon__content-label">My Father's Dragon</div>
+                <div class="coming-soon__content-synopsis">Based on the Newbery-winning children's books, this animated film follows a young boy who runs away to an island to rescue and befriend a baby dragon.</div>
+              </a>
+              <a href="" class="coming-soon__content-link">
+                <div class="coming-soon__content-label">Ehrengard</div>
+                <div class="coming-soon__content-synopsis">When a self-appointed expert on love tries to teach a timid prince the art of seduction, the plan backfires, leading to scandal — and unexpected romance.</div>
+              </a>
             </div>
         </div>
     </div>
 
+    <div class="footer">
+        <div class="footer-top">
+            <a class="footer-top-a" href="https://help.netflix.com/contactus">Questions? Contact us.</a>
+        </div>
+        <ul class="footer-links">
+            <li>FAQ</li>
+            <li>Help Center</li>
+            <li>Account</li>
+            <li>Media Center</li>
+            <li>Investor Relations</li>
+            <li>JobsWays to Watch</li>
+            <li>Terms of UsePrivacy</li>
+            <li>Cookie Preferences</li>
+            <li>Corporate Information</li>
+            <li>Contact Us</li>
+            <li>Speed Test</li>
+            <li>Legal Notices</li>
+            <li>Only on Netflix</li>
+        </ul>
+        <div class="lang-selection-container"></div>
+        <div class="footer-country"></div>
+    </div>
 
-    <!-- #region -->
-    <!--change nav-->
-    <script>
-        const nav = document.querySelectorAll(".navigation li");
-        const navMenu = document.querySelectorAll(".menu-navigation li");
-        var className = 'active';
+   <!--Videos-->
+   <div class="intro">
+    <div class="trailer">
+      <iframe
+        src=""
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      >
+      </iframe>
+      <button class="close" onclick="closeIntro();"></button>
+    </div>
+    </div>
 
-        function removeAllClass(elements){for(element of elements){element.classList.remove(className)}}
-        function addClickEvents(elements, index){
-                elements[index].onclick = function () {
-                removeAllClass(nav);
-                removeAllClass(navMenu);
-                nav[index].className = 'active';
-                navMenu[index].className = 'active';
-            }
-        }
+  <!--side bar-->
+  <div class="menu-container">
 
-        for(let i = 0; i < nav.length; i++){
-            addClickEvents(nav, i);
-            addClickEvents(navMenu, i);
-        }
-    </script>
-    <!--Automaticially change image-->
-    <script>
-        function changeBackground(auto = true){
-            // Generate a sequence of numbers
-            // Since the array is initialized with `undefined` on each position,
-            // the value of `v` below will be `undefined`
-            const index = Array.from({ length: 4 }, (v, i) => i + 1);
-            // create list link of images
-            const images = index.map(index => `./ntflx.info/bg-desktop/bg${index}.jpg`);
-
-            $('.background').backstretch(images, {
-                fade: 750,
-                duration: 15000,
-                preload: 1, //Use the lazy-loading functionality
-                start: 2 //Optional - now starts with "dome.jpg"
-            });
-
-            if(!auto){
-                $('.background').backstretch("pause");
-            }
-        }
-
-        // A $( document ).ready() block.
-        // Shorthand for $( document ).ready()
-        $(function(){
-            changeBackground(true);
-        });
-    </script>
-    <!--PLay video-->
-    <script>
-        function playVideo(){
-            window.location.replace("./Film-player/index.html");
-        }
-    </script>
-    <!--toggle Intro-->
-    <script>
-        function toggleIntro(){
-            var intro = document.querySelector(".intro");
-            if(intro.classList.contains('active')){
-                const iframe = intro.getElementsByTagName("iframe")[0].contentWindow;
-                // added "?enablejsapi=1" to YouTube's URL, to enable the feature (controls)
-                // func: playVideo, pauseVideo or stopVideo
-                iframe.postMessage('{"event":"command","func":"stopVideo","args":""}', '*');
-            }
-            intro.classList.toggle('active');
-        }
-    </script>
-    <!--toggle menu-->
-    <script>
-        function toggleMenu(){
-            document.querySelector(".menu-container").classList.toggle('active');
-        }
-    </script>
-    <!--Login-->
-    <script>
-        document.querySelector(".btn-login").addEventListener('click', function(){
-            window.location.replace("../Login/index.html");
-        });
-    </script>
-    <!-- #endregion -->
+    <script type="text/javascript" src="./js/script.js"></script>
 </body>
 </html>
